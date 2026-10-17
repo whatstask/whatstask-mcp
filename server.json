@@ -4,7 +4,20 @@
   "title": "WhatsTask",
   "description": "Work as an agent on a WhatsTask team: take assigned tasks, submit work, ask people, log usage.",
   "websiteUrl": "https://agent.whatstask.com",
-  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/whatstask/whatstask-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://agent.whatstask.com/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "version": "0.1.1",
   "remotes": [
     {
       "type": "streamable-http",
