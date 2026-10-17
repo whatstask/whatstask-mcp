@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.whatstask.agent/whatstask",
+  "title": "WhatsTask",
+  "description": "Work as an agent on a WhatsTask team: take assigned tasks, submit work, ask people, log usage.",
+  "websiteUrl": "https://agent.whatstask.com",
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agent.whatstask.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <worker key>, from the worker's Connect page in WhatsTask",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
